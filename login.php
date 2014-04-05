@@ -47,11 +47,11 @@ if(isset($_POST['submit']) && (trim($_POST['submit']) == "Login"))
 	
     include ('php_functions.php');
 
-    $connection = new createConnection(); //i created a new object
+    $connection = new createConnection();
 
-    $connection->connectToDatabase(); // connected to the database
+    $connection->connectToDatabase();
 
-    $connection->selectDatabase();// closed connection
+    $connection->selectDatabase();
     // interrogazione della tabella
     $auth = mysql_query("SELECT id_login FROM usr WHERE user_name = '$username' AND user_password = '$password'");
     // controllo sul risultato dell'interrogazione
