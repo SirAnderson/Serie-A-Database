@@ -1,10 +1,29 @@
+<!-- 
+     Copyright 2014 Manuel Deleo, Lorenzo Livrini 
+     
+     This file is part of Serie A Database.
+
+     Serie A Database is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     Serie A Database is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+-->
+
 <?php
 
 class createConnection //create a class for make connection
 {
     var $host="localhost";
-    var $username="root";    // specify the sever details for mysql
-    Var $password="F45Plo7s";
+    var $username=" ";    // specify the sever details for mysql
+    var $password=" ";
     var $database="serie a database";
     var $myconn;
 
