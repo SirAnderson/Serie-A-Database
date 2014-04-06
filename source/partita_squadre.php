@@ -230,6 +230,19 @@ if (!isset($_SESSION['login']))
 						
 						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
 						."THEN vittorie + 1 \n"
+						
+						."WHEN $totale_gol_casa < $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN vittorie \n"
+						
+						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN vittorie \n"
+						
+						."WHEN $totale_gol_casa = $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN vittorie \n"
+						
+						."WHEN $totale_gol_casa = $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN vittorie \n"
+						
 						."END, \n"
 						
 						."sconfitte = CASE \n"
@@ -239,9 +252,33 @@ if (!isset($_SESSION['login']))
 						
 						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
 						."THEN sconfitte + 1 \n"
+						
+						."WHEN $totale_gol_casa < $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN sconfitte \n"
+						
+						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN sconfitte \n"
+						
+						."WHEN $totale_gol_casa = $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN sconfitte \n"
+						
+						."WHEN $totale_gol_casa = $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN sconfitte \n"
 						."END, \n"
 						
 						."pareggi = CASE \n"
+						
+						."WHEN $totale_gol_casa < $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN pareggi \n"
+						
+						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN pareggi \n"
+						
+						."WHEN $totale_gol_casa < $totale_gol_trasferta AND id_squadra=".$_POST['trasf']." \n"
+						."THEN pareggi \n"
+						
+						."WHEN $totale_gol_casa > $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
+						."THEN pareggi \n"
 						
 						."WHEN $totale_gol_casa = $totale_gol_trasferta AND id_squadra=".$_POST['casa']." \n"
 						."THEN pareggi + 1 \n"
