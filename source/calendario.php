@@ -49,8 +49,11 @@ session_start();
 		$giorn=0;
 		if (isset($_POST['giorn'])) {
 			if ($_POST['giorn']!="") {
-			$giorn=$_POST['giorn'];
+				$giorn=$_POST['giorn'];
 			}
+		}
+		else {
+       		$giorn=30;
 		}
 		?>
 	</div>
