@@ -1,0 +1,402 @@
+
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+a {
+	color: #2d3192;
+	text-decoration:none;
+}
+a:hover {
+	color:#666;
+	text-decoration:underline;
+}
+blockquote {
+	background:#f1f1f1;
+	border-left:2px solid #ed1b24;
+	color:#444;
+	display:block;
+	font-style:oblique;
+	line-height:20px;
+	margin:0 0 0 10px;
+	padding:0 0 0 10px;
+}
+.left {
+	float:left;
+	margin:0 10px 0 0;
+}
+.right {
+	float:right;
+	margin:0 0 0 10px;
+}
+
+/* body */
+body {
+	background:#fff url('background_body.png') repeat-x top;
+	color:#666;
+	font:0.7em Verdana, "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+}
+
+#main ul
+{
+    list-style-type: none;
+}
+
+#partfieldset {
+	border:2px solid black;
+	background-color: #2d3192;
+	margin-bottom: 30px;
+}
+
+#calendfieldset {
+	border:2px solid black;
+	background-color: #2d3192;
+	margin-bottom: 30px;
+}
+
+legend {
+  padding: 0.1em .5em;
+  border:1px solid black;
+  background-color: white;
+  color:black;
+  font-size:90%;
+  text-align:right;
+}
+
+th, td {
+text-align:center;
+width: 200px;
+font-size: 1.0em;
+}
+
+#classtab, #classth, #classtd {
+	border: 1px solid #aaaaaa;
+}
+
+#caltable
+{
+	margin: 0 auto;	
+}
+
+#classth {
+	color: #aa0000;
+	padding: 5px;
+}
+
+#squadth {
+	color: #2d3192;
+	padding: 5px;
+}
+
+#ammcalc {
+	color: #ffd600;
+	padding: 5px;
+}
+
+#espcalc {
+	color: #ff0000;
+	padding: 5px;
+}
+
+#classtd, #squadtd{
+	color: #000000;
+}
+
+#calsqtd{
+	color: #000000;
+	width: 150px;
+}
+
+#calristd{
+	font-size: 1.1em;
+	color: #aa0000;
+	width: 30px;
+}
+
+
+#squadtd {
+	font-size: 1.5em;
+	background-color: #eeeeee;
+}
+
+#classtab {
+	border-collapse:collapse;
+}
+
+#tabpres {
+	text-align:left;
+}
+
+#tabpresclass {
+	color: #aa0000;
+	text-align:left;
+	border: 1px solid #aaaaaa;
+	background-color: #eeeeee;
+	padding:2px;
+}
+
+#select1 {
+	width: 15%; /* Set width. Do not set height else it will fail in IE8-10. Use padding for height. */
+    font-weight: normal;
+    font-size: 1em;
+    line-height:1.2em;
+    margin: 20px;
+    padding: 6px;
+	border:1px solid black;
+}
+
+input {
+	background: #fff; /* Colore di sfondo */
+    border: 1px solid #000; /* Bordo */
+    color: #000; /* Colore del testo */
+    height: 25px; /* Altezza */
+    line-height: 20px; /* Altezza di riga */
+    width: 300px; /* Larghezza */
+    padding: 0 3px; /* Padding */
+}
+
+input.button {
+	background: #2d3192; /* Colore di sfondo */
+    border: 2px solid #000; /* Bordo */
+    color: #fff; /* Colore del testo */
+    height: 30px; /* Altezza */
+    line-height: 30px; /* Altezza di riga */
+    width: 100px; /* Larghezza */
+    padding: 0 10px; /* Padding */
+	margin: 10px;
+}
+
+#submitbutton{
+	float: right;
+	background: #2d3192; /* Colore di sfondo */
+    border: 2px solid #000; /* Bordo */
+    color: #fff; /* Colore del testo */
+    height: 30px; /* Altezza */
+    line-height: 30px; /* Altezza di riga */
+    width: 100px; /* Larghezza */
+    padding: 0 10px; /* Padding */
+	margin: 10px;
+}
+
+input.check{
+    width: 15px; /* Larghezza */
+	margin-right: 5px;
+	position: relative;
+    top: 8px;
+}
+
+#hmenu {
+	background-color: #2d3192;
+	height:32px;
+	position:relative;
+	z-index:30000;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+
+#hmenu ul {
+	list-style:none;
+	position:absolute;
+
+}
+#hmenu ul li {
+	display:inline-block;
+	list-style:none;
+}
+#hmenu ul li a {
+	color:#ffffff;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+	display:block;
+	font-size:1.4em;
+	font-weight:700;
+	height:20px;
+	padding: 6px;
+	border-right: 1px solid #000000; 
+}
+#hmenu ul li a:hover {
+	background:#ffffff;
+	text-decoration:none;
+}
+#hmenu p  a{
+	color:#ffffff;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+	display:block;
+	font-size:1.4em;
+	font-weight:700;
+	height:20px;
+	padding: 6px;
+	border-right: 1px solid #000000; 
+	float: right;
+}
+
+#hmenu p a:hover {
+	background:#ffffff;
+	text-decoration:none;
+}
+
+#title {
+	color:#ff0000;
+text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+	font-size:38px;
+	font-weight:400;
+	letter-spacing:-2px;
+	position:absolute;
+	top:40px;
+
+}
+
+#title2 {
+	color:#000;
+	font-size:38px;
+	font-weight:400;
+	right:0;
+	letter-spacing:-2px;
+	position:absolute;
+	top:40px;
+}
+
+/* header */
+#header {
+	background:url('logo-serie-a.png');
+	height:308px;
+	margin:0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position:relative;
+	width:250px;
+}
+#header:after {
+	clear:both;
+	content:'.';
+	display:block;
+	height:5px;
+	visibility:hidden;
+}
+#header h1 {
+	color:#ff0000;
+	font-size:40px;
+	font-weight:400;
+	left:0;
+	letter-spacing:-2px;
+	position:absolute;
+	top:40px;
+}
+#header p {
+	bottom:130px;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+	color:#ffff00;
+	font-size:2em;
+	position:absolute;
+	left:350px;
+}
+
+/* content */
+#content {
+	height:auto;
+	margin:0 auto;
+	width:760px;
+}
+#content:after {
+	clear:both;
+	content:'.';
+	display:block;
+	height:0;
+	visibility:hidden;
+} 
+
+
+
+/* Main */
+
+#txt{
+	width: 250px;
+	color:#000;
+	padding:2px;
+	font-size:0.8em;
+}
+
+#txt2{
+	width: 130px;
+	color:#000;
+	padding:5px;
+}
+
+#txt3{
+	width: 160px;
+	color:#000;
+	padding-bottom:6px;
+	padding-top:6px;
+}
+
+#goldropdown {
+	width: 60px;
+    font-size: 0.6em;
+    line-height:1.0em;
+	border:1px solid black;
+}
+
+#main p {
+	color:#000;
+	padding:5px;
+	font-size:1.0em;
+}
+
+#main h1 {
+	color:#2d3192;
+	text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+	text-align: center;
+	font-size:4.5em;
+	font-weight:bold;
+	line-height:30px;
+	padding:0 10px;
+	margin: 20px;
+}
+
+#main h2 {
+border-bottom: 1px solid #2d3192; 
+	color:#aa0000;
+	text-align: center;
+	font-size:2.9em;
+	font-weight:bold;
+	padding:0 10px;
+	margin: 70px;
+}
+
+#main h3 {
+	color:#2d3192;
+	font-size:1.5em;
+	font-weight:bold;
+	padding:0 10px;
+	margin: 10px;
+}
+
+#main h4 {
+	color:#2d3192;
+	font-size:1.5em;
+	font-weight:bold;
+	padding:0 10px;
+	margin: 10px;
+}
+
+/* footer */
+#footer {
+	margin:10px auto;
+	width:760px;
+}
+#footer:after {
+	clear:both;
+	content:'.';
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+#footer p {
+	border-top:2px solid #2d3192;
+	color: black;
+	font-size:90%;
+	line-height:20px;
+	padding:10px;
+	text-align:center;
+}
